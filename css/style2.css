@@ -11,8 +11,7 @@
 header {
   background: var(--main-bg-color);
   font-family: "Lato", sans-serif;
-  /* this strat */
-  /* min-height: 5vh; */
+
   min-width: auto;
 }
 
@@ -72,6 +71,10 @@ nav ul li a:hover {
 }
 
 .slider {
+  border: 20px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80vw;
   margin: 12px auto;
   overflow: hidden;
@@ -85,7 +88,6 @@ nav ul li a:hover {
 
 .cards {
   display: flex;
-  /* overflow: hidden; */
 }
 
 .card-item {
@@ -97,10 +99,6 @@ nav ul li a:hover {
 
 .card h2 {
   font-family: "Lato", sans-serif;
-}
-
-.container {
-  min-height: calc(100vh - 58px - 12vh);
 }
 
 footer {

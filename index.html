@@ -5,16 +5,18 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>online shopping</title>
-  <link rel="stylesheet" href=".\css\phone.css" />
+  <title>कोकण नैसर्गिक कृषी</title>
+  <link rel="stylesheet" href=".\css\yatin.css" />
   <link rel="stylesheet" href=".\css\style2.css" />
   <link rel="stylesheet" href=".\css\responsive.css" />
+  <link rel="stylesheet" href=".\css\fortrying.css" />
+
 </head>
 
 <body>
   <header>
     <nav>
-      <div class="logo"><img src=".\img\mango.jpg" alt="" /></div>
+      <div class="logo"><img src=".\img/mainlogo.png" alt="" /></div>
       <ul>
         <li><a href="home.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -202,10 +204,29 @@
       this.style.background = "blue";
     });
 
-    document.getElementsByTagName("div").addEventListener("mouseenter", function () {
-      this.style.background = "black";
+    const elements = document.querySelectorAll(".card-item");
 
-    });
+    // Use a regular for loop to add event listeners
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].addEventListener("mouseenter", abc);
+    }
+
+    function abc(event) {
+      event.target.classList.add("bold"); // Add the 'bold' class to the clicked element
+      console.log("Yes, working on:");
+    }
+
+
+    // for (let i = 0; i < elements.length; i++) {
+    //   elements[i].addEventListener("mouseout", abc);
+    // }
+
+    // function abc(event) {
+    //   event.target.classList.remove("bold"); // Add the 'bold' class to the clicked element
+    //   console.log("htay");
+    // }
+
+
   </script>
 
 </body>

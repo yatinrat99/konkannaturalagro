@@ -2,11 +2,6 @@
   nav {
     flex-direction: column;
   }
-
-  .slider {
-    height: 23vh;
-  }
-
   .logo {
     justify-content: center;
     margin: 142px 0;
