@@ -35,6 +35,17 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .logo {
+    margin: 15px;
+  }
+  header {
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 10px;
+  }
+
   .container {
     flex-direction: column;
   }
@@ -73,7 +84,7 @@ body {
   }
 
   nav .search input {
-    width: 80%;
+    width: 55%;
   }
 
   .card-item {
