@@ -91,7 +91,7 @@ nav ul li a:hover {
 .card-item {
   display: inline-flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   margin: 0 15px;
 }
 
