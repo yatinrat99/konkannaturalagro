@@ -1,0 +1,28 @@
+#full {
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  background-color: rgba(251, 251, 251, 0.52);
+  top: 0;
+  right: -40%;
+  backdrop-filter: blur(10px);
+  padding: 150px 60px;
+}
+
+#full h4 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#full i {
+  cursor: pointer;
+  position: absolute;
+  top: 5%;
+  right: 30px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 900;
+  font-size: 40px;
+}
