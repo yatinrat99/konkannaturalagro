@@ -78,25 +78,47 @@ nav ul li a:hover {
   overflow: hidden;
 }
 
-.card {
-  max-width: 91vw;
-  margin: 37px auto;
-  font-family: "Ubuntu", sans-serif;
-}
-
 .cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px;
 }
 
 .card-item {
-  display: inline-flex;
-  justify-content: center;
-  flex-direction: row;
-  margin: 0 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
 }
 
-.card h2 {
-  font-family: "Lato", sans-serif;
+.card-item:hover {
+  transform: scale(1.05);
+}
+
+.card-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid #ddd;
+}
+
+.lines {
+  padding: 15px;
+}
+
+.lines p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 footer {
